@@ -4,6 +4,12 @@
   /* list-style-position : 목록의 들여쓰기 여부 지정(none일땐 안됨) */
   list-style-position: inside;
   /* list-style-image: url(../img/caudatus.jpg); */
-  
+
 }
 
+ul ul {
+  list-style-type: none;
+}
+
+/* 상속되는 속성(color)과
+상속되지 않는 속성(list-style-type)이 존재한다. */
