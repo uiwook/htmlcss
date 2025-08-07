@@ -1,0 +1,26 @@
+.main {
+  border: 1px solid #000;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.position {
+  border: 1px solid #000;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.position1 {
+  top: 5vw;
+  left: 4vw;
+}
+.position2 {
+  top: 10vw;
+  right: 9vw;
+}
+.position3 {
+  left: 6vw;
+  bottom: 5vw;
+}
