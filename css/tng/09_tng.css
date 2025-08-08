@@ -1,0 +1,64 @@
+/* 전체선택자에 margin, padding, box-sizing을 0으로 만들어
+  우리가 설정하려는 값에 방해가 안되게 초기화 시켜놓는다. */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-black {
+  background-clip: padding-box;
+  background-color: black;
+  width: 70vw;
+  height: 90vw;
+  padding: 10px 80px 50px;
+}
+.bg-main {
+  background-clip: content-box;
+  background-color: white;
+  border: 1px dotted gray;
+  width: 70vw;
+  height: 90vw;
+  position: relative;
+}
+.coment {
+  text-align: center;
+}
+.come {
+  color: white;
+  margin: 30px;
+  padding: 30px;
+  background-color: rgb(10, 121, 121);
+  background-clip: border-box;
+}
+.wait {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.sub-title {
+  color: red;
+  margin-left: 20px;
+}
+.main-comnet {
+  letter-spacing: 1px;
+  font-size: 110%;
+  line-height: 200%;
+  margin-left: 70px;  
+}
+.img-bird2 {
+  background-image: url(../../img/caudatus.jpg);
+  background-size: 25vw 20vh;
+  width: 25vw;
+  height: 20vh;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* .img-bird {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20em;
+  height: 15em;
+} */

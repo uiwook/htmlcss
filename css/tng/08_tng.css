@@ -1,7 +1,6 @@
 .main {
   border: 1px solid #000;
-  width: 500px;
-  height: 500px;
+
   position: relative;
 }
 
@@ -13,14 +12,14 @@
 }
 
 .position1 {
-  top: 5vw;
+  top: 5vh;
   left: 4vw;
 }
 .position2 {
-  top: 10vw;
+  top: 10vh;
   right: 9vw;
 }
 .position3 {
   left: 6vw;
-  bottom: 5vw;
+  bottom: 5vh;
 }

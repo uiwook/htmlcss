@@ -1,0 +1,35 @@
+.background-test1 {
+  padding: 10px;
+  background-color: #6495ed;
+  border: 3px dotted black;
+  background-clip: content-box;
+}
+.div-bg-img {
+  border: 3px solid red;
+  width: 500px;
+  height: 500px;
+  /* 배경을 이미지로 지정 */
+  background-image: url(../img/caudatus.jpg);
+  /* 배경 이미지의 크기 조절 */
+  background-size: 200px;
+  /* 배경 이미지의 반복 방법 조절 */
+  background-repeat: no-repeat;
+  /* 배경 이미지 위치를 조절 */
+  background-position: top 0 right 0;
+  
+}
+
+body {
+  /* background-image: url(../img/icons8-쿠버네티스-480.png); */
+  /* 스크롤이 생길경우 요소의 배경 이미지를 고정 */
+  background-attachment: fixed;
+}
+
+.div_gradation {
+  width: 500px;
+  height: 500px;
+  /* 선형 그라데이션 */
+  /* background: linear-gradient(to right, black, white 20%, blue); */
+  /* 원형 그라데이션 */
+  background: radial-gradient(circle at 0% 50%, black, white, blue);
+}
