@@ -1,0 +1,21 @@
+/* 선택자::before -> 특정 요소의 컨텐츠앞에 다른 요소를 삽입 (나의 부모요소로) */
+/* 선택자::after -> 특정 요소의 컨텐츠뒤에 다른 요소를 삽입 (나의 자식요소로) */
+/* 선택자::first-letter -> 특정 요소의 첫 글자를 선택 */
+/* 선택자::first-line -> 특정 요소의 첫 줄을 선택 */
+/* content 까먹지 않기 */
+.required::before {
+  content: '*';
+  color: red;
+}
+.required::after {
+  content: '*';
+  color: red;
+}
+p::first-letter {
+  color: red;
+  font-size: 30px;
+}
+p::first-line {
+  color: red;
+  text-decoration: underline;
+}

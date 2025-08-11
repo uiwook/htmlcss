@@ -1,0 +1,82 @@
+* {
+  line-height: 10px;
+  box-sizing: border-box;
+}
+/* .container {
+  position: relative;
+}
+.container::after {
+  background-image: url(../../img/icons8-쿠버네티스-480.png);
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  }
+  배경을 투명도로 만드는 방법 */
+
+.container {
+  background-image: url(../../img/icons8-쿠버네티스-480.png);
+  width: 400px;
+  background-size: cover;
+}
+.main {
+  color: rgb(177, 5, 177);
+}
+
+.idea:focus {
+  outline: none;
+  border: 3px solid red;
+}
+.redname:checked + label {
+  color: red;
+}
+
+.idea_list {
+  width: 200px;
+  height: 150px;
+  /* background-color: initial; */
+  /* background-color: transparent; */
+  background: none;
+}
+
+.star::before {
+  content: '*';
+  color: red;
+}
+
+.send {
+  line-height: 20px;
+  position: relative;
+}
+.check {
+  opacity: 0;
+  background-color: #000;
+  color: white;
+  letter-spacing: 2px;
+}
+.send:hover {
+  opacity: 1;
+}
+.lineup {
+  display: flex;
+}
+.send:hover::after {
+  content: '내용을 다시 한 번 확인해 주세요.';
+  position: absolute;
+  width: 300px;
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  top: 0;
+  left: 60px;
+}
+/* 선택자::before -> 특정 요소의 컨텐츠앞에 다른 요소를 삽입 (나의 부모요소로) */
+/* 선택자::after -> 특정 요소의 컨텐츠뒤에 다른 요소를 삽입 (나의 자식요소로) */
+/* 선택자::first-letter -> 특정 요소의 첫 글자를 선택 */
+/* 선택자::first-line -> 특정 요소의 첫 줄을 선택 */
+/* content 까먹지 않기 */
