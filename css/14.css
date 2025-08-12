@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.item {
+  min-width: 100px;
+  max-width: 150px;
+  width: 30vw;
+  height: 15vh;
+  background-color: rgb(33, 255, 181);
+  border: 1px solid #000;
+}
+
+.container-row {
+  /* flex box는 부모요소에 display: flex 속성을 지정해서 사용 */
+  display: flex;
+  /* 주축의 방향을 지정하는 속성(기본 row) */
+  /* row-reverse를 사용할 때 왼쪽으로 튀어가지 않도록 주의!(웹의 작동원리 때문) */
+  /* flex-direction: row; */
+  /* 항목의 줄을 바꿀지 여부를 지정(기본 nowrap)
+  wrap-reverse : 개행의 순서만 바꾼다 */
+  /* flex-wrap: wrap; */
+  
+  /* 주축(direction)과 항목(wrap)을 한번에 지정 */
+  flex-flow: row wrap;
+  /* flex 내에서의 padding느낌 */
+  gap: 10px;
+}
+
+.container-sort {
+  height: 250px;
+  background-color: rgb(69, 181, 255);
+  padding: 5px 0;
+  display: flex;
+  /* 주축 기준 정렬(기본 flex-start, 주축의 시작하는 방향을 뜻) */
+  /* justify-content: space-around; */
+  /* flex-start, flex-end, center, space-between, space-around */
+  flex-wrap: wrap;
+  /* 교차축 기준 정렬(주축이 아닌 다른 축) */
+  /* align-content: space-around; */
+
+  /* 아이템 위치를 개별적으로 조정하는 교차축 기준 정렬 */
+  align-items: baseline;
+}
+
+.container-sort > .item {
+  width: 100px;
+  height: 50px;
+}
+
+.container-sort > .item:nth-child(2) {
+  line-height: 70px;
+}
+
+.container-sort > .item:nth-child(4) {
+  /* 교차축 기준 특정 아이템만 정렬 */
+  align-self: flex-end;
+}
+
