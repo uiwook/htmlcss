@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flexy {
+  display: grid;
+  grid-template-rows: 23rem 1fr;
+}
+
+/* head */
+.head {
+  background-image: url(../mavel/img/main_title.jpg);
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+}
+.head-text1 {
+  text-indent: 35px;
+  font-size: 70px;
+  margin: auto 0;
+}
+.head-text2 {
+  font-size: 25px;
+  margin: auto 0;
+}
+
+/* container */
+.container {
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 10px;
+  margin: 20px;
+}
+.main {
+  border: 1px solid gray;
+  border-radius: 3%;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  align-content: center;
+}
+.main-img {
+  padding-top: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 5rem;
+}
+.img-foot {
+  position: absolute;
+  color: white;
+  background-color: #000;
+  text-indent: 1rem;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  opacity: 0.9;
+  font-weight: 900;
+  line-height: 3.6rem;
+}
+.main-text {
+  text-align: center;
+  margin: auto 0;
+}
+
+
+
+
+/* foot */
+.foot {
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 80px;
+}

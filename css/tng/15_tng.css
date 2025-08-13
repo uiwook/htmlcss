@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 500px;
+  padding: 10px;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 50px);
+  gap: 10px;
+}
+.item {
+  border: 1px solid #000;
+  background-color: cadetblue;
+}
+
+/* .row-span2 {
+  grid-row-start: span 2;
+} */
+.column-span2 {
+  grid-column-start: span 2;
+}
+:not(.container > .item:nth-child(n+5)) {
+  grid-row-start: span 2;
+}
+/* 현업에서는 CSS가 자주 바뀌어야 하기 때문에 많이 묶어서 사용하지 않는다. */
